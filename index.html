@@ -436,57 +436,45 @@
         }
 
         /* Skills Section */
-        #skills {
-            background: var(--bg-secondary);
-        }
+       /* Skills Section */
+#skills {
+    background: var(--bg-secondary);
+}
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
 
-        .skill-category {
-            background: var(--bg-card);
-            padding: 2rem;
-            border-radius: 20px;
-            border: 1px solid var(--border);
-            transition: all 0.3s ease;
-        }
+.skill-category {
+    background: var(--bg-card);
+    padding: 2rem;
+    border: 1px solid var(--border);
+}
 
-        .skill-category:hover {
-            border-color: var(--accent);
-            transform: translateY(-5px);
-        }
+.skill-category h3 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
 
-        .skill-category h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
-            color: var(--accent);
-            margin-bottom: 1.5rem;
-        }
+.skill-list {
+    list-style: none;
+}
 
-        .skill-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-        }
+.skill-item {
+    display: block;
+    padding: 0.8rem 0;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border);
+}
 
-        .skill-item {
-            padding: 0.6rem 1.2rem;
-            background: var(--bg-secondary);
-            border-radius: 20px;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            border: 1px solid transparent;
-            transition: all 0.3s ease;
-        }
-
-        .skill-item:hover {
-            border-color: var(--accent);
-            color: var(--text-primary);
-        }
+.skill-item:last-child {
+    border-bottom: none;
+}
 
         /* Experience Section */
         .timeline {
@@ -806,33 +794,16 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>I'm a third-year Computer Science student at KIIT University with a passion for creating meaningful mobile experiences.</p>
-                        <p>My journey in tech revolves around Android app development, where I love transforming ideas into functional, user-friendly applications. I'm currently expanding my expertise into cybersecurity, fascinated by the intersection of development and security.</p>
-                        <p>Currently working as an Android Developer Intern at Antop Technologies, where I'm gaining hands-on experience with Flutter and contributing to real-world projects.</p>
                         
                         <div class="hobbies">
                             <h3>Beyond Code</h3>
                             <div class="hobby-tags">
-                                <span class="hobby-tag">🎭 Bharatnatyam</span>
-                                <span class="hobby-tag">💃 Kathak</span>
-                                <span class="hobby-tag">📚 Reading</span>
-                                <span class="hobby-tag">🍳 Cooking</span>
-                                <span class="hobby-tag">✨ Crafts</span>
+                                <span class="hobby-tag">Bharatnatyam</span>
+                                <span class="hobby-tag">Kathak</span>
+                                <span class="hobby-tag">Reading</span>
+                                <span class="hobby-tag">Cooking</span>
+                                <span class="hobby-tag">Crafts</span>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <h4>Current Focus</h4>
-                            <p>Building secure, scalable Android applications while deepening my understanding of cybersecurity principles and practices.</p>
-                        </div>
-                        <div class="highlight-item">
-                            <h4>What Drives Me</h4>
-                            <p>I believe in creating technology that empowers and protects users. Whether it's a safety app or an encrypted chat platform, I'm passionate about building solutions that matter.</p>
-                        </div>
-                        <div class="highlight-item">
-                            <h4>Cultural Roots</h4>
-                            <p>As a trained classical dancer in Bharatnatyam and Kathak, I bring the same dedication to precision and creativity to my development work.</p>
                         </div>
                     </div>
                 </div>
@@ -855,8 +826,7 @@
                             </div>
                             <div class="project-icon">📍</div>
                         </div>
-                        <p class="project-problem"><strong>Problem:</strong> Need for a reliable, real-time location sharing solution with safety features for minors.</p>
-                        <p><strong>Solution:</strong> Built a comprehensive Android app enabling live location tracking with an integrated SOS button for emergency situations. Implemented smart link functionality allowing access without app installation.</p>
+                        <p>Built a comprehensive Android app enabling live location tracking with an integrated SOS button for emergency situations. Implemented smart link functionality allowing access without app installation.</p>
                         <p>Managed the complete product lifecycle from concept to deployment, focusing on real-time data synchronization and user safety.</p>
                         <div class="project-links">
                             <a href="https://github.com/aparajitashri04" class="project-link">
@@ -874,8 +844,7 @@
                             </div>
                             <div class="project-icon">💬</div>
                         </div>
-                        <p class="project-problem"><strong>Problem:</strong> Secure communication needed for users on the same local network without internet dependency.</p>
-                        <p><strong>Solution:</strong> Developed a Flutter-based chat application with end-to-end encryption, enabling secure messaging between users connected to the same network.</p>
+                        <p>Developed a Flutter-based chat application with end-to-end encryption, enabling secure messaging between users connected to the same network.</p>
                         <p>Implemented custom encryption protocols and managed full product development from ideation through testing and deployment.</p>
                         <div class="project-links">
                             <a href="https://github.com/aparajitashri04" class="project-link">
@@ -893,8 +862,7 @@
                             </div>
                             <div class="project-icon">🤖</div>
                         </div>
-                        <p class="project-problem"><strong>Problem:</strong> Manual, repetitive tasks consuming valuable time in daily workflows.</p>
-                        <p><strong>Solution:</strong> Created multiple AI-powered automation agents including a Calendar Scheduler, Email Responder, LinkedIn Content Generator, and Message Analysis Agent.</p>
+                        <p>Created multiple AI-powered automation agents including a Calendar Scheduler, Email Responder, LinkedIn Content Generator, and Message Analysis Agent.</p>
                         <p>Integrated Google Workspace APIs, Google Sheets, and Tavily to deliver fully automated, no-code workflows powered by Gemini 2.5 Flash.</p>
                         <div class="project-links">
                             <a href="https://github.com/aparajitashri04" class="project-link">
@@ -1064,24 +1032,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="contact-form">
-                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1109,14 +1059,6 @@
                     </a>
                 </div>
                 
-                <a href="#" class="download-resume">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
-                    Download Resume
-                </a>
 
                 <p>© 2026 Aparajita Shrivastava. Crafted with care.</p>
             </div>
@@ -1159,19 +1101,6 @@
                     link.classList.add('active');
                 }
             });
-        });
-
-        // Download resume functionality
-        document.querySelector('.download-resume').addEventListener('click', (e) => {
-            e.preventDefault();
-            // You can replace this with actual resume file path
-            alert('Please upload your resume PDF and update the link in the code!');
-        });
-
-        // Form submission (replace with your form service)
-        document.querySelector('form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Please set up a form service like Formspree or EmailJS to enable form submission!');
         });
     </script>
 </body>
